@@ -7,7 +7,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.{SQLContext, SparkSession}
 
 /**
-  * Created by lf50 on 31/07/17.
+  * Created By Kiran on 31/07/17.
   */
 object DataFrames {
 
@@ -39,8 +39,8 @@ object DataFrames {
 
     val spark = SparkSession.builder().master("local[1]").appName("DataFrameExamples").getOrCreate()
     val sc = spark.sparkContext
-    val accessKeyId = "AKIAI2GGCY2SE5TKIBJA"
-    val accessSecretKey = "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"
+    val accessKeyId = "*******"
+    val accessSecretKey = "***********"
     val bucketName = "kkks3practice"
 
     spark.conf.set("fs.s3n.awsAccessKeyId",accessKeyId)
